@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    background-color: rgb(222, 172, 128);
+    color: black;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.title-font{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:100px;
+}
+
+header {
+    background-color: rgb(147, 195, 138);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 175px;
+}
+
+.texto1{
+    margin-left:200px;
+}
+
+.texto2{
+    margin-right:200px;
+}
+
+footer{
+    background-color: rgb(111, 98, 89);
+    color:white;
+    padding:1em 0;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.display-linea{
+    display:inline-block;
+    margin:25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-info {
+    background-color: rgb(247, 220, 185);
+    max-width: 450px;
+    width: 90%; 
+    padding: 15px;
+    border-radius: 15px;
+    margin:130px;
+    border: solid 2px;
+    border-color:black;  
+}
+
+.logo{
+    width: 375px;
+    height: 175px;
+}
+
+.fotos {
+    width: 460px;
+    height: 460px;
+    border-radius: 10px;
+    margin-left:8px;
+    border: solid 2px;
+    border-color:black;
+    margin-top:15px;
+}
+
+.portada{
+    width: 600px;
+    height: 1125px;
+    border-radius: 20px;
+    margin-left:8px;
+    margin-top:15px;
+}
+
+.cards-grid {
+    display: flex; 
+    justify-content: space-around; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.flip-card {
+    width: 620px; 
+    height: 1150px; 
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 28px;
+    transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+    transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flip-card-back {
+    font-size: 2.5rem;
+    text-align: center;
+    display:grid;
+    place-items: center;
+    padding: 32px;
+    background-color: rgb(247,220,185);
+    transform: rotateY(180deg);
+    line-height: 0.5;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+}
+  
